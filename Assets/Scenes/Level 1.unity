@@ -236,6 +236,12 @@ MonoBehaviour:
   moveableLayerMask:
     serializedVersion: 2
     m_Bits: 0
+  rayCastOffset: {x: 0, y: 0}
+  rayCastLengthDown: 0
+  rayCastLengthSide: 2
+  rayCastLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &792377848
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +476,12 @@ MonoBehaviour:
   moveableLayerMask:
     serializedVersion: 2
     m_Bits: 0
+  rayCastOffset: {x: 0, y: 0}
+  rayCastLengthDown: 0
+  rayCastLengthSide: 2
+  rayCastLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &1430193060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -520,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7598065552169861728, guid: e6f940113ae31f74d8c9d50196c87879, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.86
+      value: 6.81
       objectReference: {fileID: 0}
     - target: {fileID: 7598065552169861728, guid: e6f940113ae31f74d8c9d50196c87879, type: 3}
       propertyPath: m_LocalPosition.y
@@ -585,6 +597,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockDetection: {fileID: 792377850}
   moveableLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  rayCastOffset: {x: 0, y: 0}
+  rayCastLengthDown: 0
+  rayCastLengthSide: 2
+  rayCastLayerMask:
     serializedVersion: 2
     m_Bits: 0
 --- !u!1660057539 &9223372036854775807

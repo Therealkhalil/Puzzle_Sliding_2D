@@ -9,6 +9,21 @@ public class BlockMovement : MonoBehaviour
     [SerializeField] private BlockDetection blockDetection;
     [SerializeField] private LayerMask moveableLayerMask;
 
+    private int direction = 1; // direction of enemy (on x axis)
+
+
+    //the raycasts
+    private RaycastHit2D rightLedgeRayCastHit;
+    private RaycastHit2D leftLedgeRayCastHit;
+    private RaycastHit2D rightWallRayCastHit;
+    private RaycastHit2D leftWallRayCastHit;
+
+    [Header("RayCasts")]
+    [SerializeField] private Vector2 rayCastOffset; // center of the raycast where it will be placed
+    [SerializeField] private float rayCastLengthDown, rayCastLengthSide = 2; // length of the raycast
+    [SerializeField] private LayerMask rayCastLayerMask; // the layers that will interact with it.
+    private Vector2 targetVelocity;
+
     // Update is called once per frame
     void Update()
     {
@@ -18,10 +33,12 @@ public class BlockMovement : MonoBehaviour
             {
                 // Move the last clicked block in the determined direction
                 blockDetection.lastClickedBlock.transform.Translate(moveDirection);
-                
                 blockDetection.lastClickedBlock = null; // Reset for next click
             }
         }
+        
+
+        
     }
 
     bool IsBlockMovable(GameObject block, out Vector2 moveDirection)
