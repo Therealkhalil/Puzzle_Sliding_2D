@@ -6,7 +6,7 @@ public class GameScript : MonoBehaviour
 {
     [SerializeField] private Transform emptySpace = null;
     private Camera _camera;
-    public int test = 0;
+    public float test = 0;
     // Start is called before the first frame update
     void Start()
     {
